@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css"> 
+    <title>Controller Selector 11</title>
+</head>
+<body>
+    <h1>Select Your Controller</h1>
+
+    <p id="data-count">Loading data...</p> 
+
+    <form id="controllerForm" onsubmit="getControllers(); return false;"> 
+
+
+
+
+
+<!--         
+        <label for="size">Choose size: </label>
+        <select id="size">
+            <option value="">Any Size</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="B">Box</option>
+        </select><br><br>
+ -->
+
+<!--  
+         <label for="cost">Preferred Cost (USD): </label>
+        <input type="number" id="cost" placeholder="Any Cost"><br><br>
+ -->
+
+<!-- 
+        <label for="controller-style">Choose style: </label>
+        <select id="controller-style">
+            <option value="">Any Style</option>
+            <option value="acrylic">Acrylic</option>
+            <option value="ergonomic">Ergonomic</option>
+            <option value="metal">Metal</option>
+            <option value="stickless">Stickless</option>
+            <option value="mini">Mini</option>
+            <option value="3D printed">3D Printed</option>
+            <option value="wasd">WASD</option>
+            <option value="plastic">Plastic</option>
+        </select><br><br>
+         -->
+
+<!--          
+         <label for="buttons">Number of buttons: </label>
+        <input type="number" id="buttons" placeholder="Any Buttons"><br><br>
+ -->
+
+<!-- 
+        <label for="play-location">Where do you play? </label>
+        <select id="play-location">
+            <option value="">Any Location</option>
+            <option value="desk">Desk</option>
+            <option value="lap">Lap</option>
+            <option value="travel">Travel</option>
+        </select><br><br>
+ -->
+
+
+<!-- 
+        <label for="switches-style">Switches Style: </label>
+        <select id="switches-style">
+            <option value="">Any Switches Style</option>
+            <option value="low profile">Low Profile</option>
+            <option value="mechanical">Mechanical</option>
+            <option value="optical">Optical Low Profile</option>
+        </select><br><br>
+
+        <label for="switches">Switches: </label>
+        <select id="switches">
+            <option value="">Any Switches</option>
+            <option value="cherry">Cherry MX</option>
+            <option value="gateron low profile">Gateron Low Profile</option>
+            <option value="gateron">Gateron Mechanical</option>
+            <option value="mechanical">Hot Swap MX Switches</option>
+            <option value="kailh silver">Kailh Silver Turbo</option>
+            <option value="kailh v1">Kailh V1</option>
+            <option value="kailh v2">Kailh V2</option>
+            <option value="leobog graywood">LEOBOG Graywood V4</option>
+            <option value="low profile">Low Profile</option>
+            <option value="optical">Optical Low Profile</option>
+        </select><br><br>
+ -->
+
+<!-- 
+        <label for="brand">Brand: </label>
+        <select id="brand">
+            <option value="">Any Brand</option>
+            <option value="asi">ASI - ASIndo.pro</option>
+            <option value="doio">DOIO</option>
+            <option value="duelpad">Duelpad</option>
+            <option value="fightbox">Fightbox</option>
+            <option value="haute42">Haute42</option>
+            <option value="speedy labs">Speedy Labs</option>
+            <option value="tikitaka">Tikitaka</option>
+        </select><br><br>
+ -->
+
+<!--         
+        <label for="model">Model: </label>
+        <input type="text" id="model" placeholder="Any model"><br><br>
+ -->
+
+
+<!-- 
+        <label for="keycaps">Keycaps: </label>
+        <select id="keycaps">
+            <option value="">Any Keycaps</option>
+            <option value="6">6</option>
+            <option value="20.2">20.2</option>
+            <option value="25.3">25.3</option>
+            <option value="22.2">22.2</option>
+            <option value="25.8">25.8</option>
+            <option value="23.3">23.3</option>
+            <option value="26.6">26.6</option>
+        </select><br><br>
+ -->
+
+<!-- 
+        <label for="sellers">Sellers: </label>
+        <select id="sellers">
+            <option value="">Any Seller</option>
+            <option value="aliexpress.com">AliExpress</option>
+            <option value="amazon.com">Amazon</option>
+            <option value="keebmonkey.com">KeebMonkey</option>
+            <option value="speedylabs.us">Speedy Labs</option>
+            <option value="asindo.pro">ASIndo.pro</option>
+        </select><br><br>
+ -->
+
+<!-- 
+        <label for="accessories">Accessories: </label>
+        <select id="accessories">
+            <option value="">Any Accessories</option>
+            <option value="brooks adapter">Brooks Adapter</option>
+            <option value="mayflash adapter">Mayflash Adapter</option>
+            <option value="mayflash magicboot">Mayflash Magicboot</option>
+            <option value="haute42 cosmox booter 5">Haute42 Cosmox Booter 5</option>
+            <option value="PS5 All FightSticks Adapter">PS5 All FightSticks Adapter</option>
+        </select><br><br>
+ -->
+
+
+
+
+
+
+        <div class="seller-cost-container">
+            <div class="seller-option">
+                <label for="title">Title: </label>
+                <input type="text" id="title" placeholder="Any Title">       
+            </div>
+
+            <div class="cost-option">
+                <label for="other">Other Features: </label>
+                <input type="text" id="other" placeholder="Any Other Features">       
+            </div>
+        </div>
+
+
+        <div class="seller-cost-container">
+            <div class="seller-option">
+                <label for="sellers">Sellers: </label>
+                <select id="sellers">
+                    <option value="">Any Seller</option>
+                    <option value="aliexpress.com">AliExpress</option>
+                    <option value="amazon.com">Amazon</option>
+                    <option value="keebmonkey.com">KeebMonkey</option>
+                    <option value="speedylabs.us">Speedy Labs</option>
+                    <option value="asindo.pro">ASIndo.pro</option>
+                </select>
+            </div>
+
+            <div class="cost-option">
+                <label for="cost">Preferred Cost (USD): </label>
+                <input type="number" id="cost" placeholder="Any Cost">
+            </div>
+        </div>
+
+
+
+        <div class="accessories-play-container">
+            <div class="accessories-option">
+                <label for="accessories">Accessories: </label>
+                <select id="accessories">
+                    <option value="">Any Accessories</option>
+                    <option value="brooks adapter">Brooks Adapter</option>
+                    <option value="mayflash adapter">Mayflash Adapter</option>
+                    <option value="mayflash magicboot">Mayflash Magicboot</option>
+                    <option value="haute42 cosmox booter 5">Haute42 Cosmox Booter 5</option>
+                    <option value="PS5 All FightSticks Adapter">PS5 All FightSticks Adapter</option>
+                </select>
+            </div>
+
+            <div class="play-location-option">
+                <label for="play-location">Where do you play? </label>
+                <select id="play-location">
+                    <option value="">Any Location</option>
+                    <option value="desk">Desk</option>
+                    <option value="lap">Lap</option>
+                    <option value="travel">Travel</option>
+                </select>
+            </div>
+        </div>
+
+
+
+        <div class="brand-model-container">
+            <div class="brand-option">
+                <label for="brand">Brand: </label>
+                <select id="brand">
+                    <option value="">Any Brand</option>
+                    <option value="asi">ASI - ASIndo.pro</option>
+                    <option value="doio">DOIO</option>
+                    <option value="duelpad">Duelpad</option>
+                    <option value="fightbox">Fightbox</option>
+                    <option value="haute42">Haute42</option>
+                    <option value="speedy labs">Speedy Labs</option>
+                    <option value="tikitaka">Tikitaka</option>
+                </select>
+            </div>
+        
+            <div class="model-option">
+                <label for="model">Model: </label>
+                <input type="text" id="model" placeholder="Any model">
+            </div>
+        </div>        
+
+        <div class="buttons-keycaps-container">
+            <div class="buttons-option">
+                <label for="buttons">Number of buttons: </label>
+                <input type="number" id="buttons" placeholder="Any Buttons">
+            </div>
+        
+            <div class="keycaps-option">
+                <label for="keycaps">Keycaps: </label>
+                <select id="keycaps">
+                    <option value="">Any Keycaps</option>
+                    <option value="6">6</option>
+                    <option value="20.2">20.2</option>
+                    <option value="25.3">25.3</option>
+                    <option value="22.2">22.2</option>
+                    <option value="25.8">25.8</option>
+                    <option value="23.3">23.3</option>
+                    <option value="26.6">26.6</option>
+                </select>
+            </div>
+        </div>        
+
+        <div class="size-style-container">
+            <div class="size-option">
+                <label for="size">Choose size: </label>
+                <select id="size">
+                    <option value="">Any Size</option>
+                    <option value="XS">XS</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                    <option value="B">Box</option>
+                </select>
+            </div>
+        
+            <div class="style-option">
+                <label for="controller-style">Choose style: </label>
+                <select id="controller-style">
+                    <option value="">Any Style</option>
+                    <option value="acrylic">Acrylic</option>
+                    <option value="ergonomic">Ergonomic</option>
+                    <option value="metal">Metal</option>
+                    <option value="stickless">Stickless</option>
+                    <option value="mini">Mini</option>
+                    <option value="3D printed">3D Printed</option>
+                    <option value="wasd">WASD</option>
+                    <option value="plastic">Plastic</option>
+                </select>
+            </div>
+        </div>
+
+        
+        <div class="switch-options-container">
+            <div class="switch-option">
+                <label for="switches-style">Switches Style: </label>
+                <select id="switches-style">
+                    <option value="">Any Switches Style</option>
+                    <option value="low profile">Low Profile</option>
+                    <option value="mechanical">Mechanical</option>
+                    <option value="optical">Optical Low Profile</option>
+                </select>
+            </div>
+        
+            <div class="switch-option">
+                <label for="switches">Switches: </label>
+                <select id="switches">
+                    <option value="">Any Switches</option>
+                    <option value="cherry">Cherry MX</option>
+                    <option value="gateron low profile">Gateron Low Profile</option>
+                    <option value="gateron">Gateron Mechanical</option>
+                    <option value="mechanical">Hot Swap MX Switches</option>
+                    <option value="kailh silver">Kailh Silver Turbo</option>
+                    <option value="kailh v1">Kailh V1</option>
+                    <option value="kailh v2">Kailh V2</option>
+                    <option value="leobog graywood">LEOBOG Graywood V4</option>
+                    <option value="low profile">Low Profile</option>
+                    <option value="optical">Optical Low Profile</option>
+                </select>
+            </div>
+        </div>
+        
+
+
+        <div class="features-options-container">
+            <div class="features-option">
+                <label for="passthrough-port">Has Passthrough Port: </label>
+                <select id="passthrough-port">
+                    <option value="">Any</option>
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </select>
+            </div>
+        
+            <div class="features-option">
+                <label for="screen">Has Screen: </label>
+                <select id="screen">
+                    <option value="">Any</option>
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </select>
+            </div>
+        </div>
+        
+
+        <div class="art-options-container">
+            <div class="art-option">
+                <label for="custom-art-top">Allows Custom Top Art: </label>
+                <select id="custom-art-top">
+                    <option value="">Any</option>
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </select>
+            </div>
+        
+            <div class="art-option">
+                <label for="custom-art-bottom">Allows Custom Bottom Art: </label>
+                <select id="custom-art-bottom">
+                    <option value="">Any</option>
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </select>
+            </div>        
+        </div>
+ 
+        
+
+
+
+
+
+
+
+
+
+        <div class="art-options-container">
+        
+            <div class="art-option">
+                <label for="art-paper-size">Art Paper Size: </label>
+                <select id="art-paper-size">
+                    <option value="">Any Size</option>
+                    <option value="N/A">N/A</option>
+                    <option value="A3">A3 - Tabloid | 11x17 or FedEx Tabloid | 11x17</option>
+                    <option value="A4">A4  | 8.5x11</option>
+                    <option value="A5">A5  | 8.5x11</option>
+                </select>
+            </div>
+            <div class="art-option">
+                <label for="os">Operating System: </label>
+                <select id="os">
+                    <option value="">Any OS</option>
+                    <option value="gp2040-ce">gp2040-ce</option>
+                    <option value="rp2040">rp2040</option>
+                    <option value="other">Other</option>
+                </select>        
+            </div>
+            
+        </div>
+        
+
+        <button type="submit">Find Controllers</button>
+    </form>
+
+    <!-- <h2>Selected Controllers</h2> -->
+    <div id="results"></div>
+
+    <script>
+        let controllersList = [];
+        fetch('data.json')
+            .then(response => response.json())
+            .then(data => {
+                controllersList = data;
+                document.getElementById('data-count').textContent = `Total controllers found: ${controllersList.length}`;
+            })
+            .catch(error => {
+                document.getElementById('data-count').textContent = 'Error loading data.';
+                console.error('Error fetching the controller data:', error);
+            });
+
+        function getControllers() {
+            const selections = {
+                size: document.getElementById('size').value,
+                cost: document.getElementById('cost').value,
+                "controller-style": document.getElementById('controller-style').value,
+                buttons: document.getElementById('buttons').value,
+                "play-location": document.getElementById('play-location').value,
+                "switches-style": document.getElementById('switches-style').value,
+                switches: document.getElementById('switches').value,
+                brand: document.getElementById('brand').value,
+                model: document.getElementById('model').value,
+                keycaps: document.getElementById('keycaps').value,
+                sellers: document.getElementById('sellers').value,
+                accessories: document.getElementById('accessories').value,
+                screen: document.getElementById('screen').value,
+                "passthrough-port": document.getElementById('passthrough-port').value,
+                "custom-art-top": document.getElementById('custom-art-top').value,
+                "custom-art-bottom": document.getElementById('custom-art-bottom').value,
+                os: document.getElementById('os').value,
+                title: document.getElementById('title').value,
+                other: document.getElementById('other').value,
+                "art-paper-size": document.getElementById('art-paper-size').value,
+        
+            };
+
+            const selectedControllers = controllersList.filter(controller => {
+                let isMatch = true;
+
+                if (selections.size && !controller.size.includes(selections.size)) isMatch = false;
+                if (selections.cost && Math.abs(controller.cost[0] - selections.cost) > 5) isMatch = false;
+                if (selections["controller-style"] && !controller["controller-style"].includes(selections["controller-style"])) isMatch = false;
+                if (selections.buttons && !controller.buttons.includes(parseInt(selections.buttons))) isMatch = false;
+                if (selections["play-location"] && !controller["play-location"].includes(selections["play-location"])) isMatch = false;
+                if (selections["switches-style"] && !controller["switches-style"].includes(selections["switches-style"])) isMatch = false;                
+                if (selections.switches && !controller.switches.includes(selections.switches)) isMatch = false;
+                if (selections.brand && controller.brand.toLowerCase() !== selections.brand.toLowerCase()) isMatch = false;
+                if (selections.model && !controller.model.toLowerCase().includes(selections.model.toLowerCase())) isMatch = false;
+                if (selections.keycaps && !controller.keycaps.includes(parseFloat(selections.keycaps))) isMatch = false;
+                if (selections.sellers && !controller.sellers.includes(selections.sellers)) isMatch = false;
+                if (selections.accessories && !controller.accessories.includes(selections.accessories)) isMatch = false;
+                if (selections.screen && parseInt(controller.screen) !== parseInt(selections.screen)) isMatch = false;
+                if (selections["passthrough-port"] && parseInt(controller["passthrough-port"]) !== parseInt(selections["passthrough-port"])) isMatch = false;
+                if (selections["custom-art-top"] && parseInt(controller["custom-art-top"]) !== parseInt(selections["custom-art-top"])) isMatch = false;
+                if (selections["custom-art-bottom"] && parseInt(controller["custom-art-bottom"]) !== parseInt(selections["custom-art-bottom"])) isMatch = false;
+                if (selections.os && controller.os !== selections.os) isMatch = false;
+                if (selections.title && !controller.title.toLowerCase().includes(selections.title.toLowerCase())) isMatch = false;
+                if (selections.other && !controller.other.toLowerCase().includes(selections.other.toLowerCase())) isMatch = false;
+                if (selections["art-paper-size"] && !controller["art-paper-size"].includes(selections["art-paper-size"])) isMatch = false;
+
+                return isMatch;
+            });
+
+            displayResults(selectedControllers);
+        }
+
+        function createList(label, items) {
+            if (!Array.isArray(items) || items.length === 0) {
+                return `<p>${label}: None</p>`;
+            }
+            let list = `<p>${label}:</p><ul>`;
+            items.forEach(item => {
+                list += `<li>${item}</li>`;
+            });
+            list += `</ul>`;
+            return list;
+        }
+
+
+        function displayResults(controllers) {
+            const resultsDiv = document.getElementById('results');
+            resultsDiv.innerHTML = '';
+
+            const count = controllers.length;
+            const countText = `<h2>Selected Controllers: ${count}</h2>`;
+            resultsDiv.innerHTML = countText;
+
+            if (controllers.length === 0) {
+                resultsDiv.innerHTML = '<p>No controllers match your criteria.</p>';
+                return;
+            }
+
+            controllers.forEach((controller, index) => {
+
+                const screenInfo = controller.screen === 1 ? "Yes - Has a screen" : "No - Not available";  
+                const passthroughportInfo = controller["passthrough-port"] === 1 ? "Yes - Has a passthrough port" : "No - Not available";  
+                const customarttopInfo = controller["custom-art-top"] === 1 ? "Yes - Allows Custom Top Art" : "No - Not available";  
+                const customartbottomInfo = controller["custom-art-bottom"] === 1 ? "Yes - Allows Custom Bottom Art" : "No - Not available";  
+                
+
+                const controllerElement = document.createElement('div');
+                controllerElement.innerHTML = `
+                    <h3>${controller.brand} - ${controller.model}</h3>
+                    <p>Title: $${controller.title}</p>
+                    <p>Cost: $${controller.cost[0]}</p>
+                    ${createList("Size", controller.size)}
+                    ${createList("Controller Style", controller["controller-style"])}
+                    ${createList("Button Count Options", controller.buttons)}
+                    ${createList("Keycaps", controller.keycaps)}
+                    <p>OS: $${controller.os}</p>
+                    ${createList("Play Location", controller["play-location"])}
+                    <p>Switches Style: ${controller["switches-style"]}</p>
+                    ${createList("Switch Options", controller.switches)}
+                    <p>Screen (Y / N): ${screenInfo}</p>                    
+                    <p>Passthrough Port (Y / N): ${passthroughportInfo}</p>
+                    <p>Custom Top Art (Y / N): ${customartbottomInfo}</p>
+                    <p>Custom Bottom Art (Y / N): ${customartbottomInfo}</p>
+                    <p>Art Paper Size: ${controller["art-paper-size"]}</p>
+                    <p>Other: $${controller.other}</p>
+                    ${createList("Sellers", controller.sellers)}
+                    ${createLinks("Where to Buy", controller.links)} 
+                    ${createList("Accessories", controller.accessories)}
+
+                    <div id="carousel-${index}" class="carousel">
+                        <button onclick="prevImage(${index})">Previous</button>
+                        <img id="image-${index}" src="${controller.images[0]}" class="carousel-image">
+                        <button onclick="nextImage(${index})">Next</button>
+                    </div>
+
+                `;
+                resultsDiv.appendChild(controllerElement);
+            });
+        }
+
+        let currentImageIndex = {};
+
+        function nextImage(index) {
+            const controller = controllersList[index];
+            if (!currentImageIndex[index]) currentImageIndex[index] = 0;
+            currentImageIndex[index] = (currentImageIndex[index] + 1) % controller.images.length;
+            document.getElementById(`image-${index}`).src = controller.images[currentImageIndex[index]];
+        }
+
+        function prevImage(index) {
+            const controller = controllersList[index];
+            if (!currentImageIndex[index]) currentImageIndex[index] = 0;
+            currentImageIndex[index] = (currentImageIndex[index] - 1 + controller.images.length) % controller.images.length;
+            document.getElementById(`image-${index}`).src = controller.images[currentImageIndex[index]];
+        }
+
+        function createList(label, items) {
+            if (!Array.isArray(items) || items.length === 0) {
+                return `<p>${label}: N/A</p>`;
+            }
+            let list = `<p>${label}:</p><ul>`;
+            items.forEach(item => {
+                list += `<li>${item}</li>`;
+            });
+            list += `</ul>`;
+            return list;
+        }
+
+        function createLinks(label, links) {
+            if (!Array.isArray(links) || links.length === 0) {
+                return `<p>${label}: N/A</p>`;
+            }
+            let list = `<p>${label}:</p><ul>`;
+            links.forEach(link => {
+                list += `<li><a href="${link}" target="_blank">Buy Here</a></li>`;
+            });
+            list += `</ul>`;
+            return list;
+        }
+
+    </script>
+</body>
+</html>
+
+
+
+
+<!-- 
+
+# The simple answer is whatever paper is larger than the controller. The paper sizes below are just recommended sizes and paper larger than the ones listed can be used.
+# |Controller    | ISO | US     |
+    # |Haute Mini    | A5  | 8.5x11 |
+# |Haute Board   | A5  | 8.5x11 |
+    # |G-Series      | A5  | 8.5x11 |
+    # |S-Series      | A5  | 8.5x11 |
+    # |M-Series      | A4  | 8.5x11 |
+    # |M-Series Plus | A3* | 11x17  |
+    # |P-Series      | A5  | 8.5x11 |
+    # |T-Series      | A3* | 11x17  |
+    # |R-Series      | A3* | 11x17  |
+    # |U-Series      | A3* | 11x17  |
+
+# * Possible with A4, but may require printer to be able to print very close to the edge
+
+-->
+

@@ -1,0 +1,225 @@
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.carousel-image {
+    max-width: 300px;
+    max-height: 200px;
+    margin: 0 10px;
+}
+button {
+    padding: 5px 10px;
+    margin: 0 5px;
+}
+
+
+
+
+
+
+
+
+/* Container for sellers and cost options */
+.seller-cost-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+/* Each option (sellers and cost) takes up equal space */
+.seller-option, .cost-option {
+    flex: 1;
+    min-width: 150px;
+}
+
+/* Media query for mobile devices to stack the options vertically */
+@media (max-width: 768px) {
+    .seller-cost-container {
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+/* Container for accessories and play location options */
+.accessories-play-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+/* Each option (accessories and play location) takes up equal space */
+.accessories-option, .play-location-option {
+    flex: 1;
+    min-width: 150px;
+}
+
+/* Media query for mobile devices to stack the options vertically */
+@media (max-width: 768px) {
+    .accessories-play-container {
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+/* Container for brand and model options */
+.brand-model-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+/* Each option (brand and model) takes up equal space */
+.brand-option, .model-option {
+    flex: 1;
+    min-width: 150px;
+}
+
+/* Media query for mobile devices to stack the options vertically */
+@media (max-width: 768px) {
+    .brand-model-container {
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+/* Container for buttons and keycaps options */
+.buttons-keycaps-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+/* Each option (buttons and keycaps) takes up equal space */
+.buttons-option, .keycaps-option {
+    flex: 1;
+    min-width: 150px;
+}
+
+/* Media query for mobile devices to stack the options vertically */
+@media (max-width: 768px) {
+    .buttons-keycaps-container {
+        flex-direction: column;
+    }
+}
+
+
+
+
+/* Container for size and style options */
+.size-style-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+/* Each option (size and style) takes up equal space */
+.size-option, .style-option {
+    flex: 1;
+    min-width: 150px;
+}
+
+/* Media query for mobile devices to stack the options vertically */
+@media (max-width: 768px) {
+    .size-style-container {
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+/* Container for switch options */
+.switch-options-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+/* Each switch option takes up equal space */
+.switch-option {
+    flex: 1;
+    min-width: 150px;
+}
+
+/* Media query for mobile devices to stack the options vertically */
+@media (max-width: 768px) {
+    .switch-options-container {
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+/* Container for the features options */
+.features-options-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+/* Each feature option takes up equal space */
+.features-option {
+    flex: 1;
+    min-width: 150px;
+}
+
+/* Media query for mobile devices to stack the options vertically */
+@media (max-width: 768px) {
+    .features-options-container {
+        flex-direction: column;
+    }
+}
+
+
+
+/* Container for the custom art options */
+.art-options-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+/* Each art option takes up equal space */
+.art-option {
+    flex: 1;
+    min-width: 150px;
+}
+
+/* Media query for mobile devices to stack the options vertically */
+@media (max-width: 768px) {
+    .art-options-container {
+        flex-direction: column;
+    }
+}
+
